@@ -22,14 +22,13 @@ class ProgressBar {
             this.__output.write('\r\n');
         }
         (<any>process.stdout).cursorTo(0);
-        (<any>process.stdout).clearLine(1);
+        //(<any>process.stdout).clearLine(1);
 
         for (var i = 0; i < this.__progressBarLength; i++) {
             this.__visibleArray[i] = '=';
         }
 
         process.stdout.write(this.__formatText());
-        (<any>process.stdout).flush();
         this.__drawCount++;
     }
 
