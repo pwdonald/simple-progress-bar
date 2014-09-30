@@ -13,10 +13,10 @@ class ProgressBar {
     update(percent: number) {
         this.__percent = percent;
         this.__progressBarLength = Math.floor(percent);
-        this.draw();
+        this.__draw();
     }
 
-    draw() {
+    private __draw() {
         (<any>process.stdout).cursorTo(0);
         (<any>process.stdout).clearLine(1);
 
