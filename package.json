@@ -2,7 +2,7 @@
     "name": "simple-progress-bar",
     "description": "A very simple progress bar for Node.JS",
     "author": "Donald Jones <donald@getplatypi.com",
-    "version":  "0.2.4",
+    "version":  "0.2.5",
     "main": "progress.js",
     "scripts":  {
         "postinstall": "grunt"
