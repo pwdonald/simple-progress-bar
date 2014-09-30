@@ -1,0 +1,9 @@
+{
+    "name": "Simple Progress Bar",
+    "description": "A very simple progress bar for Node.JS",
+    "author": "Donald Jones <donald@getplatypi.com",
+    "main": "progress.js",
+    "dependencies": {
+        
+    }
+}
