@@ -12,10 +12,16 @@
             compile: {
                 src: files
             }
+        },
+        shell: {
+            tsd: {
+                command: 'node node_modules/tsd/build/cli update -so'
+            }
         }
     });
 
+    grunt.loadNpmTasks('grunt-shell');
     grunt.loadNpmTasks('grunt-typescript');
 
-    grunt.registerTask('default', ['typescript']);
+    grunt.registerTask('default', ['shell','typescript']);
 };
