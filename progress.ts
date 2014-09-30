@@ -2,7 +2,7 @@
 
 
 class ProgressBar {
-    private __visibleArray: Array<string> = new Array[10]();
+    private __visibleArray: Array<string> = new Array<string>(10);
     private __percent: number = 0;
     private __progressBarLength: number = 0;
     private __drawCount = 0;
@@ -44,6 +44,4 @@ class ProgressBar {
 
 }
 
-module.exports = (arguments) => {
-    return new ProgressBar(arguments);
-};
+export = ProgressBar;
