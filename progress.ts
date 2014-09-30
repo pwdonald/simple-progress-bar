@@ -36,7 +36,7 @@ class ProgressBar {
         var toRtn = this.format;
 
         toRtn = toRtn.replace(':label', this.label);
-        toRtn = toRtn.replace(':bar', this.__visibleArray.join(''));
+        toRtn = toRtn.replace(':bar', + '\t' + this.__visibleArray.join(''));
         toRtn = toRtn.replace(':percent', Math.floor((this.__percent * 100)) + ' %');
 
         return toRtn;
