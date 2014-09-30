@@ -8,7 +8,7 @@ class ProgressBar {
     private __drawCount = 0;
 
     constructor(public label: string = 'Progress',
-        public format: string = '%label %bar %percent',
+        public format: string = ':label :bar :percent',
         private __output: NodeJS.WritableStream = process.stdout) { }
 
     update(completeCount: number, totalCount: number) {
@@ -35,9 +35,9 @@ class ProgressBar {
     private __formatText(): string {
         var toRtn = this.format;
 
-        toRtn.replace('%label', this.label);
-        toRtn.replace('%bar', this.__visibleArray.join(''));
-        toRtn.replace('%percent', Math.floor((this.__percent * 100)) + ' %');
+        toRtn = toRtn.replace(':label', this.label);
+        toRtn = toRtn.replace(':bar', this.__visibleArray.join(''));
+        toRtn = toRtn.replace(':percent', Math.floor((this.__percent * 100)) + ' %');
 
         return toRtn;
     }
