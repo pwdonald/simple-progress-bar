@@ -1,7 +1,7 @@
 ﻿{
     "name": "simple-progress-bar",
-    "description": "A very simple progress bar for Node.JS",
-    "author": "Donald Jones <donald@getplatypi.com",
+    "description": "A very simple console progress bar for Node.JS",
+    "author": "Donald Jones <donaldrj@uab.edu>",
     "version":  "0.2.5",
     "main": "progress.js",
     "scripts":  {
@@ -18,5 +18,7 @@
     "repository":  {
         "type":  "git",
         "url":  "git+https://github.com/pwdonald/simple-progress-bar.git"
-    }
+    },
+    "licence": "MIT",
+    "homepage": "http://github.com/pwdonald/simple-progress-bar"
 }
