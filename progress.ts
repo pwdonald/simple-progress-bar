@@ -1,10 +1,10 @@
 ﻿/// <reference path="_references.ts" />
 
 var clc = require('cli-color'),
-    backgroundStyle = clc.bgGreen,
-    labelStyle = clc.white.italic,
+    backgroundStyle = clc.bgWhiteBright,
+    labelStyle = clc.black.italic,
     progressStyle = clc.blue.bold,
-    percentstyle = clc.yellow.italic;
+    percentstyle = clc.green.italic;
 
 class ProgressBar {
     private __visibleArray: Array<string> = new Array<string>(10);
