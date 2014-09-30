@@ -1,9 +1,9 @@
 ﻿/// <reference path="_references.ts" />
 
 var clc = require('cli-color'),
-    labelStyle = clc.whiteBright.bgWhite.italic,
-    progressStyle = clc.blueBright.bgWhite.bold,
-    percentstyle = clc.yellowBright.bgWhite.italic;
+    labelStyle = clc.white.italic,
+    progressStyle = clc.blue.bold,
+    percentstyle = clc.yellow.italic;
 
 class ProgressBar {
     private __visibleArray: Array<string> = new Array<string>(10);
@@ -40,7 +40,7 @@ class ProgressBar {
         var toRtn = this.format;
 
         toRtn = toRtn.replace(':label', labelStyle(this.label));
-        toRtn = toRtn.replace(':bar', progressStyle(this.__visibleArray.join('')));
+        toRtn = toRtn.replace(':bar', progressStyle('    ' + this.__visibleArray.join('')));
         toRtn = toRtn.replace(':percent', percentstyle(Math.floor((this.__percent * 100)) + ' %'));
 
         return toRtn;
