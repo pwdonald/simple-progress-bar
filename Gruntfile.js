@@ -1,6 +1,4 @@
-﻿var path = require('path');
-
-module.exports = function (grunt) {
+﻿module.exports = function (grunt) {
     var files = [
         './progress.ts'
     ];

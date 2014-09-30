@@ -6,7 +6,8 @@ class ProgressBar {
     private __percent: number = 0;
     private __progressBarLength: number = 0;
 
-    constructor(public label: string = 'Progress', public format: string = '%label %bar %percent', private __output: NodeJS.WritableStream = process.stdout) {
+    constructor(public label: string = 'Progress',
+        public format: string = '%label %bar %percent', private __output: NodeJS.WritableStream = process.stdout) {
         this.__output.write('\r\n');
     }
 
