@@ -10,5 +10,9 @@
         "grunt": "latest",
         "grunt-cli":  "latest",
         "grunt-typescript": "latest"
+    },
+    "repository":  {
+        "type":  "git",
+        "url":  "https://github.com/pwdonald/simple-progress-bar.git"
     }
 }
