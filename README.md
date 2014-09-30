@@ -29,3 +29,11 @@ globals.pubsub.on('event', (itemCount, totalItems) => {
 ###Methods:
 `update(itemCount, totalItems)`: updates the progress bar to the percent calculated by the itemCount divided by the totalItems value.
 
+###Building:
+
+`npm install`
+
+The postinstall script will run a grunt task that will compile the TypeScript to JavaScript.
+
+
+####Built with TypeScript.
