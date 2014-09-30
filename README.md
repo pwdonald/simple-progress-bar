@@ -1,6 +1,7 @@
+[![NPM](https://nodei.co/npm/simple-progress-bar.png)](https://npmjs.org/package/simple-progress-bar)
+
 simple-progress-bar
 ===================
-
 A console progress bar that is easy to use and understand. 
 
 ###Constructor:
