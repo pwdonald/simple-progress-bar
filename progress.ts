@@ -29,6 +29,7 @@ class ProgressBar {
         }
 
         process.stdout.write(this.__formatText());
+        (<any>process.stdout).flush();
         this.__drawCount++;
     }
 
