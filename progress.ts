@@ -11,9 +11,9 @@ class ProgressBar {
         public format: string = '%label %bar %percent',
         private __output: NodeJS.WritableStream = process.stdout) { }
 
-    update(percent: number) {
-        this.__percent = percent;
-        this.__progressBarLength = Math.floor(percent);
+    update(completeCount: number, totalCount: number) {
+        this.__percent = (completeCount / totalCount);
+        this.__progressBarLength = Math.floor((this.__percent * 10));
         this.__draw();
     }
 
@@ -37,7 +37,7 @@ class ProgressBar {
 
         toRtn.replace('%label', this.label);
         toRtn.replace('%bar', this.__visibleArray.join(''));
-        toRtn.replace('%percent', this.__percent + ' %');
+        toRtn.replace('%percent', Math.floor((this.__percent * 100)) + ' %');
 
         return toRtn;
     }
