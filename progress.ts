@@ -5,11 +5,11 @@ class ProgressBar {
     private __visibleArray: Array<string> = new Array[10]();
     private __percent: number = 0;
     private __progressBarLength: number = 0;
+    private __drawCount = 0;
 
     constructor(public label: string = 'Progress',
-        public format: string = '%label %bar %percent', private __output: NodeJS.WritableStream = process.stdout) {
-        this.__output.write('\r\n');
-    }
+        public format: string = '%label %bar %percent',
+        private __output: NodeJS.WritableStream = process.stdout) { }
 
     update(percent: number) {
         this.__percent = percent;
@@ -18,6 +18,9 @@ class ProgressBar {
     }
 
     private __draw() {
+        if (this.__drawCount < 1) {
+            this.__output.write('\r\n');
+        }
         (<any>process.stdout).cursorTo(0);
         (<any>process.stdout).clearLine(1);
 
@@ -26,6 +29,7 @@ class ProgressBar {
         }
 
         process.stdout.write(this.__formatText());
+        this.__drawCount++;
     }
 
     private __formatText(): string {
