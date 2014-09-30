@@ -44,4 +44,6 @@ class ProgressBar {
 
 }
 
-export = ProgressBar;
+module.exports = (arguments) => {
+    return new ProgressBar(arguments);
+};
