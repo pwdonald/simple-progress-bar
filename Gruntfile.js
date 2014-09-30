@@ -1,6 +1,6 @@
 ﻿module.exports = function (grunt) {
     var files = [
-        './progress.ts'
+        'progress.ts'
     ];
 
     grunt.initConfig({
