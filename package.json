@@ -2,18 +2,20 @@
     "name": "simple-progress-bar",
     "description": "A very simple console progress bar for Node.JS",
     "author": "Donald Jones <donaldrj@uab.edu>",
-    "version":  "0.2.6",
+    "version":  "0.2.7",
     "main": "progress.js",
     "scripts":  {
-        "postinstall": "grunt"
+        "prepublish": "grunt"
     },
     "dependencies": {
+        "cli-color":  "0.3.2"
+    },
+    "devDependencies":  {
         "grunt": "0.4.5",
         "grunt-cli":  "0.1.13",
         "grunt-typescript": "0.3.8",
         "grunt-shell":  "1.1.1",
-        "tsd": "0.5.7",
-        "cli-color":  "0.3.2"
+        "tsd": "0.5.7"
     },
     "repository":  {
         "type":  "git",

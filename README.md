@@ -32,9 +32,6 @@ globals.pubsub.on('event', (itemCount, totalItems) => {
 
 ###Building:
 
-`npm install`
-
-The postinstall script will run a grunt task that will compile the TypeScript to JavaScript.
-
+`grunt` This will build the package manually.
 
 ####Built with TypeScript.
