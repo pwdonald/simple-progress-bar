@@ -27,7 +27,6 @@ class ProgressBar {
             this.__output.write('\r\n');
         }
         (<any>process.stdout).cursorTo(0);
-        //(<any>process.stdout).clearLine(1);
 
         for (var i = 0; i < this.__progressBarLength; i++) {
             this.__visibleArray[i] = '=';
