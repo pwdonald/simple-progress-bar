@@ -171,10 +171,14 @@ public/img/uploads/
 *.css
 *.css.map
 *.min.css
-!Gruntfile.js
-!public/css/lib/flat-ui.css
+Gruntfile.js
 server/iisnode
 output.txt
 output.json
 *.log
 dbconnection.json
+*.config
+tsd.json
+*.sln
+*.csproj
+_references.js
