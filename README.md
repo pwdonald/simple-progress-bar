@@ -22,7 +22,7 @@ var ProgressBar = require('simple-progrss-bar'),
     pb;
 
 globals.pubsub.on('event', (itemCount, totalItems) => {
-    pb = flatPb || new ProgressBar('Progress: ', ':label \t [ :bar ] :percent ');
+    pb = pb || new ProgressBar('Progress: ', ':label \t [ :bar ] :percent ');
     pb.update(itemCount, totalItems);
 });
 ```
