@@ -182,3 +182,7 @@ tsd.json
 *.sln
 *.csproj
 _references.js
+test/
+terminalcolors/enums/
+terminalcolors/interfaces/
+typings/
