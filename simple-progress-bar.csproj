@@ -18,7 +18,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Gruntfile.js" />
-    <Content Include="web.config" />
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="web.Debug.config">
