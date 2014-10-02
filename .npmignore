@@ -185,8 +185,7 @@ _references.js
 test/
 terminalcolors/enums/
 terminalcolors/interfaces
-terminalcolors.js
-!terminalcolors.min.js
+!terminalcolors.js
 typings/
 progress.js
 .gitignore

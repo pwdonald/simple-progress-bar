@@ -24,7 +24,7 @@
             },
             simple: {
                 files: {
-                    'terminalcolors/terminalcolors.min.js': ['terminalcolors/terminalcolors.js'],
+                    'terminalcolors/terminalcolors.js': ['terminalcolors/terminalcolors.js'],
                     'simple-progress-bar.js': ['progress.js']
                 }
             }
