@@ -30,10 +30,17 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="progress.ts" />
+    <TypeScriptCompile Include="terminalcolors\enums\basecolor.enum.ts" />
+    <TypeScriptCompile Include="terminalcolors\enums\intensity.enum.ts" />
+    <TypeScriptCompile Include="terminalcolors\enums\style.enum.ts" />
+    <TypeScriptCompile Include="terminalcolors\interfaces\string.interface.ts" />
+    <TypeScriptCompile Include="terminalcolors\terminalcolors.ts" />
+    <TypeScriptCompile Include="test\progressbar.ts" />
     <TypeScriptCompile Include="typings\node\node.d.ts" />
     <TypeScriptCompile Include="typings\tsd.d.ts" />
     <TypeScriptCompile Include="_references.ts" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
