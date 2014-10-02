@@ -183,6 +183,8 @@ tsd.json
 *.csproj
 _references.js
 test/
-terminalcolors/enums/
-terminalcolors/interfaces/
+terminalcolors/
 typings/
+progress.js
+.gitignore
+.npmignore
