@@ -19,9 +19,13 @@
             }
         },
         uglify: {
+            options: {
+                mangle: false
+            },
             simple: {
                 files: {
-                    'progresbar.min.js': ['terminalcolors/terminalcolors.js', 'progress.js']
+                    'terminalcolors/terminalcolors.min.js': ['terminalcolors/terminalcolors.js'],
+                    'simple-progress-bar.js': ['progress.js']
                 }
             }
         }
