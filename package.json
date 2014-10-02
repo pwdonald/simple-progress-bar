@@ -2,7 +2,7 @@
     "name": "simple-progress-bar",
     "description": "A very simple console progress bar for Node.JS",
     "author": "Donald Jones <donaldrj@uab.edu>",
-    "version":  "0.3.3",
+    "version":  "0.3.4",
     "main": "simple-progress-bar.js",
     "scripts":  {
         "prepublish": "./node_modules/.bin/grunt"
