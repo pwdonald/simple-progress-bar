@@ -1,5 +1,7 @@
 ﻿module.exports = function (grunt) {
     var files = [
+        'terminalcolors/terminalcolors.ts',
+        'test/progressbar.ts',
         'progress.ts'
     ];
 

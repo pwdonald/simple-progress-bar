@@ -6,7 +6,7 @@
   "bundle": "typings/tsd.d.ts",
   "installed": {
     "node/node.d.ts": {
-      "commit": "3d7409b6960073166355701920d3e3fe3ab3f6ac"
+      "commit": "28df2695065cc4dee39d8c126a6561e2afd62552"
     }
   }
 }
